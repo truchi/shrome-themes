@@ -1,0 +1,16 @@
+{
+  "local": "http://127.0.0.2.8080/shrome-themes",
+  "themes": {
+    "shracula": {
+      "youtube": {
+        "__match": "/youtube/",
+        "__base": "/youtube",
+        "index": {
+          "__match": "/^https:\/\/www\.youtube\.com\/?$",
+          "__base": "/index",
+          "__files": [ "background.css" ]
+        }
+      }
+    }
+  }
+}
