@@ -6,7 +6,6 @@
         "__match": "/youtube/",
         "__base": "/youtube",
         "index": {
-          "__match": "/^https:\/\/www\.youtube\.com\/?$",
           "__base": "/index",
           "__files": [ "background.css" ]
         }
