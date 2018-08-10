@@ -8,7 +8,43 @@
         "index": {
           "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
           "__base": "/index",
-          "__files": [ "background.css" ]
+          "__files": [ "dark.css" ]
+        },
+        "list": {
+          "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+          "__base": "/list",
+          "__files": [ "dark.css" ]
+        },
+        "watch": {
+          "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+          "__base": "/watch",
+          "__files": [ "dark.css" ]
+        }
+      }
+    },
+    "light": {
+      "youtube": {
+        "__match": "/youtube/",
+        "__base": "/youtube",
+        "index": {
+          "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+          "__base": "/index",
+          "__files": [ "light.css" ]
+        },
+        "list": {
+          "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+          "__base": "/list",
+          "__files": [ "light.css" ]
+        },
+        "watch": {
+          "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+          "__base": "/watch",
+          "__files": [ "light.css" ]
+        },
+        "facebook&reddit": {
+          "__match": [ "/^https:\\/\\/www\\.facebook\\.com\\/?$/", "/reddit/"],
+          "__base": "/facebook",
+          "__files": [ "light.css", "comicSans.css" ]
         }
       }
     }
