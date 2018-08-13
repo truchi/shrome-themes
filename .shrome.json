@@ -8,17 +8,20 @@
         "index": {
           "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
           "__base": "/index",
-          "__files": [ "dark.css" ]
+          "__js": ["main.js"],
+          "__css": ["dark.css"]
         },
         "list": {
           "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
           "__base": "/list",
-          "__files": [ "dark.css" ]
+          "__js": ["main.js"],
+          "__css": ["dark.css"]
         },
         "watch": {
           "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
           "__base": "/watch",
-          "__files": [ "dark.css" ]
+          "__js": ["main.js"],
+          "__css": ["dark.css"]
         }
       }
     },
@@ -29,22 +32,30 @@
         "index": {
           "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
           "__base": "/index",
-          "__files": [ "light.css" ]
+          "__js": ["main.js"],
+          "__css": ["light.css"]
         },
         "list": {
           "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
           "__base": "/list",
-          "__files": [ "light.css" ]
+          "__files": {
+          "__js": ["main.js"],
+          "__css": ["light.css"]
+          }
         },
         "watch": {
           "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
           "__base": "/watch",
-          "__files": [ "light.css" ]
+          "__files": {
+          "__js": ["main.js"],
+          "__css": ["light.css"]
+          }
         },
         "facebook&reddit": {
           "__match": [ "/^https:\\/\\/www\\.facebook\\.com\\/?$/", "/reddit/"],
           "__base": "/facebook",
-          "__files": [ "light.css", "comicSans.css" ]
+          "__js": ["main.js"],
+          "__css": ["light.css"]
         }
       }
     }
