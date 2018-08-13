@@ -1,5 +1,5 @@
 {
-  "local": "http://127.0.0.2.8080/shrome-themes",
+  "local": "http://localhost:8000",
   "themes": {
     "shracula": {
       "youtube": {
