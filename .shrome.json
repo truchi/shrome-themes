@@ -50,13 +50,13 @@
           "__js": ["main.js"],
           "__css": ["light.css"]
           }
-        },
-        "facebook&reddit": {
-          "__match": [ "/^https:\\/\\/www\\.facebook\\.com\\/?$/", "/reddit/"],
-          "__base": "/facebook",
-          "__js": ["main.js"],
-          "__css": ["light.css"]
         }
+      },
+      "facebook&reddit": {
+        "__match": [ "/^https:\\/\\/www\\.facebook\\.com\\/?$/", "/reddit/"],
+        "__base": "/facebook",
+        "__js": ["main.js"],
+        "__css": ["light.css"]
       }
     }
   }
