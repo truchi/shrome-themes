@@ -1,59 +1,56 @@
 {
-  "local": "http://localhost:8000",
-  "themes": {
-    "shracula": {
-      "youtube": {
-        "__match": "/youtube/",
-        "__base": "/youtube",
-        "index": {
-          "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-          "__base": "/index",
-          "__js": ["main.js"],
-          "__css": ["dark.css"]
-        },
-        "list": {
-          "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-          "__base": "/list",
-          "__js": ["main.js"],
-          "__css": ["dark.css"]
-        },
-        "watch": {
-          "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-          "__base": "/watch",
-          "__js": ["main.js"],
-          "__css": ["dark.css"]
-        }
-      }
-    },
-    "light": {
-      "youtube": {
-        "__match": "/youtube/",
-        "__base": "/youtube",
-        "index": {
-          "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-          "__base": "/index",
-          "__js": ["main.js"],
-          "__css": ["light.css"]
-        },
-        "list": {
-          "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-          "__base": "/list",
-          "__js": ["main.js"],
-          "__css": ["light.css"]
-        },
-        "watch": {
-          "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-          "__base": "/watch",
-          "__js": ["main.js"],
-          "__css": ["light.css"]
-        }
+  "shracula": {
+    "youtube": {
+      "__match": "/youtube/",
+      "__base": "/youtube",
+      "index": {
+        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__base": "/index",
+        "__js": ["main.js"],
+        "__css": ["dark.css"]
       },
-      "facebook&reddit": {
-        "__match": [ "/^https:\\/\\/www\\.facebook\\.com\\/?$/", "/reddit/"],
-        "__base": "/facebook",
+      "list": {
+        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__base": "/list",
+        "__js": ["main.js"],
+        "__css": ["dark.css"]
+      },
+      "watch": {
+        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__base": "/watch",
+        "__js": ["main.js"],
+        "__css": ["dark.css"]
+      }
+    }
+  },
+  "light": {
+    "youtube": {
+      "__match": "/youtube/",
+      "__base": "/youtube",
+      "index": {
+        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__base": "/index",
+        "__js": ["main.js"],
+        "__css": ["light.css"]
+      },
+      "list": {
+        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__base": "/list",
+        "__js": ["main.js"],
+        "__css": ["light.css"]
+      },
+      "watch": {
+        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__base": "/watch",
         "__js": ["main.js"],
         "__css": ["light.css"]
       }
+    },
+    "facebook&reddit": {
+      "__match": [ "/^https:\\/\\/www\\.facebook\\.com\\/?$/", "/reddit/"],
+      "__base": "/facebook",
+      "__js": ["main.js"],
+      "__css": ["light.css"]
     }
   }
 }
