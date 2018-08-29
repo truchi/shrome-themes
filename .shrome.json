@@ -1,56 +1,29 @@
 {
   "shracula": {
     "youtube": {
-      "__match": "/youtube/",
-      "__base": "/youtube",
+      "__path": "/youtube",
+      "__files": ["/icimain.js", "/icidark.css"],
       "index": {
-        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-        "__base": "/index",
-        "__js": ["main.js"],
-        "__css": ["dark.css"]
+        "__matches": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__path": "/index",
+        "__files": ["/main.js", "/other.js", "/dark.css.broken"]
       },
       "list": {
-        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-        "__base": "/list",
-        "__js": ["main.js"],
-        "__css": ["dark.css"]
+        "__matches": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__path": "/index",
+        "__files": "/main.js"
       },
       "watch": {
-        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-        "__base": "/watch",
-        "__js": ["main.js"],
-        "__css": ["dark.css"]
+        "__matches": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__path": "/index",
+        "__files": [{
+          "name": "/main.js",
+          "priority": 0
+        }, {
+          "name": "/dark.css",
+          "priority": 1
+        }]
       }
-    }
-  },
-  "light": {
-    "youtube": {
-      "__match": "/youtube/",
-      "__base": "/youtube",
-      "index": {
-        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-        "__base": "/index",
-        "__js": ["main.js"],
-        "__css": ["light.css"]
-      },
-      "list": {
-        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-        "__base": "/list",
-        "__js": ["main.js"],
-        "__css": ["light.css"]
-      },
-      "watch": {
-        "__match": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
-        "__base": "/watch",
-        "__js": ["main.js"],
-        "__css": ["light.css"]
-      }
-    },
-    "facebook&reddit": {
-      "__match": [ "/^https:\\/\\/www\\.facebook\\.com\\/?$/", "/reddit/"],
-      "__base": "/facebook",
-      "__js": ["main.js"],
-      "__css": ["light.css"]
     }
   }
 }
