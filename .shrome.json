@@ -41,7 +41,7 @@
       "index": {
         "__matches": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
         "__path": "/index",
-        "__files": ["/main.js", "/other.js", "/dark.css.broken"]
+        "__files": ["/main.js", "/other.js", "/dark.css"]
       },
       "list": {
         "__matches": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
