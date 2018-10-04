@@ -1,5 +1,40 @@
 {
-  "shracula": {
+  "__files": ["/icimain.js", "/icidark.css", "/youtube/watch/dark.css"],
+  "__matches": "https://www.youtube.com",
+  "darkula": {
+    "youtube": {
+      "__path": "/youtube",
+      "__files": ["/icimain.js", "/icidark.css"],
+      "index": {
+        "__matches": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__path": "/index",
+        "__files": ["/main.js", "/other.js", "/dark.css"]
+      },
+      "list": {
+        "__matches": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__path": "/list",
+        "__files": "/main.js"
+      },
+      "watch": {
+        "__matches": "/^https:\\/\\/www\\.youtube\\.com\\/?$/",
+        "__path": "/watch",
+        "__files": [{
+          "name": "/main.js",
+          "priority": 1
+        }, {
+          "name": "/darkTEST.css",
+          "priority": 10
+        }, {
+          "name": "/darkTEST.css",
+          "priority": 10
+        }, {
+          "name": "/dark.css",
+          "priority": 1
+        }]
+      }
+    }
+  },
+  "draculight": {
     "youtube": {
       "__path": "/youtube",
       "__files": ["/icimain.js", "/icidark.css"],
